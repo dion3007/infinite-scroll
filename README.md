@@ -30,7 +30,7 @@ Run the following commands to build an apk and install it on your device.
 > yarn
 
 # Build app and made it available on http://localhost:3000/
-> yarn dev:development
+> yarn dev
 ```
 
 ### Files/Folder Structure
