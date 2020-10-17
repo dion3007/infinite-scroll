@@ -30,6 +30,11 @@ const BookList = ({ bookData }) => {
             } else if (prevData !== bookData.results && prevData !== undefined) {
                 books.unshift(...prevData)
                 setBooks(books)
+            } else {
+                router.push({
+                    pathname: router.pathname,
+                    query: { page: 0 },
+                });
             }
         }
     }, [bookData])
